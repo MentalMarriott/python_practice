@@ -4,7 +4,7 @@ script, words = argv
 
 #pass letters from word and convert with one space added
 def to_morse(letter):
-	return{
+	return {
 		'a' : ".-",
 	        'b' : "-...",
 		'c' : "-.-.",
@@ -41,7 +41,7 @@ def to_morse(letter):
 		'8' : "---..",
 		'9' : "----.",
 		'0' : "-----",
-		'_' : "_",
+		' ' : " ",
 	}[letter]
 	#print "%c" % letter
 
@@ -49,8 +49,6 @@ print "The words you entered was %s\n" % words
 
 print "This in morse code is: "
 
-word_letter_list = list(words)
-
-for letter in word_letter_list:
+for letter in words:
 	print to_morse(letter) + " = %c " %letter
 
