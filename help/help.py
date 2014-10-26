@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys 
+import sys			# <-- these are used to make comments 
 
 def main(args):
     print args
